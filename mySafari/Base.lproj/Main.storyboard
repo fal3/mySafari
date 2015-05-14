@@ -73,11 +73,14 @@
                                             <action selector="onStopLoadingButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JWI-lD-i84"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8m-oc-Ujx">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="plusButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h8m-oc-Ujx">
                                         <rect key="frame" x="287" y="16" width="30" height="30"/>
                                         <state key="normal" title="+">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="plusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tum-8h-rVs"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -98,6 +101,7 @@
                         <outlet property="activityIndicator" destination="sbc-tm-xsE" id="deh-0c-tJo"/>
                         <outlet property="backButton" destination="Arl-eL-hzN" id="G7k-1g-UR9"/>
                         <outlet property="forwardButton" destination="wKD-av-eUi" id="lPD-RL-zpQ"/>
+                        <outlet property="textField" destination="hje-FL-Uzl" id="9NA-uJ-pVF"/>
                         <outlet property="webView" destination="HkB-mb-kTn" id="SD3-Op-psO"/>
                     </connections>
                 </viewController>
